@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Review App</title>
+</head>
+<body>
+    <div class="form">
+        <h1> My Rated Movies </h1>
+        <form id="review-form">
+            <div class="form">
+                <label for="title">Movie Title:</label>
+                <input required class="title-input" placeholder="Movie Title" type="text" minlength="2">
+            </div>
+            
+            <div class="form">
+                <label for="rating">Rating:</label>
+                <input required class="rating-input" type="number" min="0" max="10" value="5">
+            </div>
+            <div class="form">
+                <button type="submit" class="submit">Submit Review</button>
+            </div>
+        </form>
+    </div>
+    <table class="results-table">
+        <thead class="thead">
+            <tr>
+                <th scope="col" id="title"> Title </th>
+                <th scope="col" id="rating"> Rating </th>
+                <th scope="col">Delete</th>
+            </tr>
+        </thead>
+        <tbody id="movie-table">
+
+        </tbody>
+    </table>
+</body>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="app.js"
+</html>
